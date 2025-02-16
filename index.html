@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,53 +28,85 @@
                         Jag är bland annat en Next & SvelteKit utvecklare
                     </p>
                     <button
-                        class="btn text-neutral-white bg-primary-soft-red bg-primary-pale-red-hover">
+                        class="btn text-neutral-white bg-primary-soft-red bg-primary-pale-red-hover bg-primary-pale-red-focus">
                         Kontakta mig
                     </button>
                 </div>
             </section>
 
-            <section>
-                <h2>Om mig</h2>
+            <div class="wrapper">
+                <section>
+                    <h2>Om mig</h2>
+                    <p>
+                        Jag tog studenten 2020 på LBS Kreativa Gymnasiet i
+                        Varberg i det tekniska programmet / systemutvecklare.
+                        Min personlighet är nyfiken på allt som rör datorteknik
+                        och hur man dels programmerar och hur man designar en
+                        hemsida. Mina fritidsintressen förutom webbutveckling är
+                        att cykla.
+                    </p>
+                    <p>
+                        Nu håller jag på med att avklara Yrgo, högre
+                        yrkesutbildning Göteborg där jag läser vidare till
+                        webbutvecklare. Det är en hög kvalité på utbildningen
+                        och vi lär oss de senaste teknikerna inom
+                        webbutveckling.
+                    </p>
+                </section>
+                <section>
+                    <h2>Vad jag gillar att arbeta med</h2>
+                    <p>
+                        Här är några av de saker jag gillar att arbeta med när
+                        jag programmerar. Jag skulle också vilja understryka att
+                        jag inte är fast i dessa språk. Jag har kunskap i flera
+                        språk.
+                    </p>
+                    <p>
+                        På fritiden så gillar jag att cykla mycket och renovera
+                        cyklar.
+                    </p>
+                </section>
+                <section>
+                    <h2>Sätt att få tag på mig</h2>
+                    <p>
+                        Jag kan bli kontaktad på fyra sett. De sätten som jag
+                        kan bli kontaktad genom är på Linkedin, e-post, SMS
+                        eller genom kontakt formuläret.
+                    </p>
+                </section>
 
-                <p>
-                    Jag tog studenten 2020 på LBS Kreativa Gymnasiet i Varberg i
-                    det tekniska programmet / systemutvecklare. Min personlighet
-                    är nyfiken på allt som rör datorteknik och hur man dels
-                    programmerar och hur man designar en hemsida. Mina
-                    fritidsintressen förutom webbutveckling är att cykla.
-                </p>
+                <section>
+                    <h2>Kontakt formulär</h2>
 
-                <p>
-                    Nu håller jag på med att avklara Yrgo, högre yrkesutbildning
-                    Göteborg där jag läser vidare till webbutvecklare. Det är en
-                    hög kvalité på utbildningen och vi lär oss de senaste
-                    teknikerna inom webbutveckling.
-                </p>
-            </section>
-            <section>
-                <h2>Vad jag gillar att arbeta med</h2>
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="name">Namn</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Meddelande</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required></textarea>
+                        </div>
 
-                <p>
-                    Här är några av de saker jag gillar att arbeta med när jag
-                    programmerar. Jag skulle också vilja understryka att jag
-                    inte är fast i dessa språk. Jag har kunskap i flera språk.
-                </p>
-
-                <p>
-                    På fritiden så gillar jag att cykla mycket och renovera
-                    cyklar.
-                </p>
-            </section>
-            <section>
-                <h2>Sätt att få tag på mig</h2>
-
-                <p>
-                    Jag kan bli kontaktad på fyra sett. De sätten som jag kan
-                    bli kontaktad genom är på Linkedin, e-post, SMS eller genom
-                    kontakt formuläret.
-                </p>
-            </section>
+                        <button
+                            type="submit"
+                            class="btn text-neutral-white bg-neutral-moderate-blue bg-primary-light-grayish-blue-hover bg-primary-light-grayish-blue-focus">
+                            Skicka
+                        </button>
+                    </form>
+                </section>
+            </div>
         </main>
     </body>
 </html>
