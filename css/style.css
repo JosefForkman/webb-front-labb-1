@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary-Moderate-blue: hsl(238, 40%, 52%);
+    --Primary-Light-grayish-blue: hsl(239, 57%, 85%);
+    --Primary-Soft-Red: hsl(358, 79%, 66%);
+    --Primary-Pale-red: hsl(357, 100%, 86%);
+    
+    --Neutral-Dark-blue: hsl(212, 24%, 26%);
+    --Neutral-Grayish-Blue: hsl(211, 10%, 45%);
+    --Neutral-Light-gray: hsl(223, 19%, 93%);
+    --Neutral-Very-light-gray: hsl(228, 33%, 97%);
+    --Neutral-Very-light-gray-40: hsla(228, 33%, 97%, 0.4);
+    --Neutral-White: hsl(0, 0%, 100%);
+
+    --transition-time: 0.150s;
+}
+
+/* Text colors */
+.text-neutral-white {
+    color: var(--Neutral-White);
+}
+
+/* bg colors */
+.bg-primary-soft-red {
+    background-color: var(--Primary-Soft-Red);
+}
+
+.bg-primary-pale-red-hover:hover {
+    background-color: var(--Primary-Pale-red);
+}
+
+.bg-neutral-light-gray {
+    background-color: var(--Neutral-Light-gray);
+}
+
+body {
+    font-family: "Roboto Mono", serif;
+    background-color: var(--Neutral-White);
+}
+
+h1, h2, h3 {
+    color: var(--Neutral-Dark-blue);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--Neutral-Grayish-Blue);
+
+    max-width: 75ch;
+
+    margin-bottom: 1ch;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	border: none;
+
+    transition: background-color var(--transition-time) ease-in-out;
+
+	&::before {
+		content: "";
+		margin-right: 0.5em;
+	}
+}
+
+main {
+    padding-inline: 1rem;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    margin-top: 2rem;
+    .profile-image-continer {
+        padding: 1rem;
+        border-radius: 1rem;
+
+        img {
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 0.8rem 0.8rem 0 0;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        button {
+            margin-top: 4px;
+        }
+    }
+}
