@@ -1,0 +1,63 @@
+:root {
+    --Primary-Moderate-blue: hsl(238, 40%, 52%);
+    --Primary-Light-grayish-blue: hsl(239, 57%, 85%);
+    --Primary-Soft-Red: hsl(358, 79%, 66%);
+    --Primary-Pale-red: hsl(357, 100%, 86%);
+
+    --Neutral-Dark-blue: hsl(212, 24%, 26%);
+    --Neutral-Grayish-Blue: hsl(211, 10%, 45%);
+    --Neutral-Light-gray: hsl(223, 19%, 93%);
+    --Neutral-Very-light-gray: hsl(228, 33%, 97%);
+    --Neutral-Very-light-gray-40: hsla(228, 33%, 97%, 0.4);
+    --Neutral-White: hsl(0, 0%, 100%);
+
+    --transition-time: 0.15s;
+}
+
+/* Text colors */
+.text-neutral-white {
+    color: var(--Neutral-White);
+}
+
+.text-neutral-grayish-blue {
+    color: var(--Neutral-Grayish-Blue);
+}
+
+.text-neutral-moderate-blue {
+    color: var(--Primary-Moderate-blue);
+}
+
+/* bg colors */
+.bg-primary-soft-red {
+    background-color: var(--Primary-Soft-Red);
+}
+
+.bg-primary-pale-red-hover:hover, 
+.bg-primary-pale-red-focus:focus  {
+    background-color: var(--Primary-Pale-red);
+}
+
+.bg-neutral-grayish-blue {
+    background-color: var(--Neutral-Grayish-Blue);
+}
+
+.bg-primary-light-grayish-blue {
+    background-color: var(--Primary-Light-grayish-blue);
+}
+
+.bg-primary-light-grayish-blue-hover:hover, 
+.bg-primary-light-grayish-blue-focus:focus {
+    background-color: var(--Primary-Light-grayish-blue);
+}
+
+.bg-neutral-moderate-blue {
+    background-color: var(--Primary-Moderate-blue);
+}
+.bg-neutral-moderate-blue-hover:hover, 
+.bg-neutral-moderate-blue-focus:focus {
+    background-color: var(--Primary-Moderate-blue);
+}
+
+.bg-neutral-light-gray {
+    background-color: var(--Neutral-Light-gray);
+}
