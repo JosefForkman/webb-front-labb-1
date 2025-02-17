@@ -45,4 +45,16 @@ main {
     }
 }
 
+.contact-wraper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    margin-block: 2rem;
+
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
 
