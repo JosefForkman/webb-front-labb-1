@@ -27,6 +27,12 @@
     color: var(--Primary-Moderate-blue);
 }
 
+.text-primary-light-grayish-blue {
+    color: var(--Primary-Light-grayish-blue);
+}
+.text-primary-soft-red {
+    color: var(--Primary-Soft-Red);
+}
 /* bg colors */
 .bg-primary-soft-red {
     background-color: var(--Primary-Soft-Red);
