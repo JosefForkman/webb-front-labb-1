@@ -2,7 +2,7 @@ h1,
 h2,
 h3 {
     color: var(--Neutral-Dark-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5em;
 }
 
 p {
@@ -78,4 +78,17 @@ form {
     gap: 72px;
 
     margin-bottom: 40px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    list-style: none;
+}
+.card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid var(--Primary-Light-grayish-blue);
 }
