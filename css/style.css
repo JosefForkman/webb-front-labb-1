@@ -8,7 +8,6 @@
     html {
         font-size: 1.4rem;
     }
-    
 }
 body {
     font-family: "Roboto Mono", serif;
@@ -74,25 +73,63 @@ main {
             width: 200px;
         }
     }
-    
 }
 
-
 .project {
-
-    .links {
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-
-        a {
-            text-decoration: none;
-        }
-    }
-
     button {
         width: 100%;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 1rem; */
+    
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        max-width: 75ch;
+        width: min(100%, 75ch);
+        height: min(fit-content, 100% - 2rem);
+        overflow-y: auto;
+        box-sizing: border-box;
+
+        .hadder {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                font-size: 1.5rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+        }
+
+        .links {
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.5em;
+        }
     }
 }
 
@@ -100,9 +137,9 @@ main {
     display: grid;
     grid-template-columns: auto auto 1fr;
     column-gap: 1.5rem;
-    
 
-    h2, p {
+    h2,
+    p {
         grid-column: 1 / -1;
     }
     .skills {
@@ -126,5 +163,4 @@ main {
             height: 200px;
         }
     }
-    
 }

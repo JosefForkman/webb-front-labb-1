@@ -23,6 +23,12 @@
     color: var(--Neutral-Grayish-Blue);
 }
 
+.text-neutral-grayish-blue,
+.text-neutral-grayish-blue-hover:hover,
+.text-neutral-grayish-blue-focus:focus {
+    color: var(--Neutral-Grayish-Blue);
+}
+
 .text-neutral-moderate-blue {
     color: var(--Primary-Moderate-blue);
 }
@@ -66,4 +72,8 @@
 
 .bg-neutral-light-gray {
     background-color: var(--Neutral-Light-gray);
+}
+
+.bg-neutral-white {
+    background-color: var(--Neutral-White);
 }
