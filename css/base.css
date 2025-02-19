@@ -67,6 +67,11 @@ form {
                 border-color: var(--Primary-Moderate-blue);
             }
         }
+
+        textarea {
+            aspect-ratio: 3/1;
+            resize: vertical;
+        }
     }
     button {
         align-self: flex-start;
