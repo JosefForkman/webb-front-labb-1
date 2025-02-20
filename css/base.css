@@ -86,15 +86,15 @@ form {
     margin-bottom: 40px;
 }
 
-.card-list {
+.grid-container {
+    --grid-min-width: 300px;
+    --grid-gap: 1.5rem;
+    
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--grid-min-width)), 1fr));
+    gap: var(--grid-gap);
 
-    list-style: none;
-
-    @media screen and (width > 750px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    list-style: none;;
 }
 .card {
     padding: 1rem;
