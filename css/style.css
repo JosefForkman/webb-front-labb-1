@@ -78,10 +78,6 @@ main {
 .project {
     button {
         width: 100%;
-
-        &:focus + .modal {
-            display: block;
-        }
     }
 }
 
@@ -96,27 +92,26 @@ main {
     }
 }
 
-
-
 .modal {
     --modal-padding-block: 1rem;
     --modal-padding-inline: 1rem;
 
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 75ch;
+    height: calc(100% - var(--modal-padding-block) * 2);
+    width: calc(100% - var(--modal-padding-inline) * 2);
+
+    border: 0px;
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
     .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         padding: 1rem;
         border-radius: 0.5rem;
-        max-width: 75ch;
-        height: calc(100% - var(--modal-padding-block) * 2);
-        width: calc(100% - var(--modal-padding-inline) * 2);
         overflow-y: auto;
 
         .hadder {
