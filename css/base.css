@@ -36,6 +36,10 @@ img {
     cursor: pointer;
 
     transition: background-color var(--transition-time) ease-in-out;
+
+    &.w100 {
+        width: 100%;
+    }
 }
 
 form {

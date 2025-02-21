@@ -75,12 +75,6 @@ main {
     }
 }
 
-.project {
-    button {
-        width: 100%;
-    }
-}
-
 .links {
     display: flex;
     gap: 1rem;
@@ -170,4 +164,8 @@ main {
             height: 200px;
         }
     }
+}
+
+.posts {
+    margin-top: rem;
 }
