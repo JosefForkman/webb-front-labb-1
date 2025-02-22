@@ -29,6 +29,8 @@ img {
     display: inline-block;
     font-size: 0.875rem;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     border: none;
