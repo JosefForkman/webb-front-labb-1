@@ -1,3 +1,8 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
 h1,
 h2,
 h3 {
@@ -88,8 +93,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 72px;
-
-    margin-bottom: 40px;
 }
 
 .grid-container {
