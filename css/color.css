@@ -3,6 +3,7 @@
     --Primary-Light-grayish-blue: hsl(239, 57%, 85%);
     --Primary-Soft-Red: hsl(358, 79%, 66%);
     --Primary-Pale-red: hsl(357, 100%, 86%);
+    --Primary-Missing-Status: hsl(35, 79%, 66%);
 
     --Neutral-Dark-blue: hsl(212, 24%, 26%);
     --Neutral-Grayish-Blue: hsl(211, 10%, 45%);
@@ -18,11 +19,9 @@
 .text-neutral-white {
     color: var(--Neutral-White);
 }
-
-.text-neutral-grayish-blue {
-    color: var(--Neutral-Grayish-Blue);
+.text-neutral-dark-blue {
+    color: var(--Neutral-Dark-blue);
 }
-
 .text-neutral-grayish-blue,
 .text-neutral-grayish-blue-hover:hover,
 .text-neutral-grayish-blue-focus:focus {
@@ -38,6 +37,9 @@
 }
 .text-primary-soft-red {
     color: var(--Primary-Soft-Red);
+}
+.text-primary-missing-status {
+    color: var(--Primary-Missing-Status);
 }
 /* bg colors */
 .bg-primary-soft-red {
