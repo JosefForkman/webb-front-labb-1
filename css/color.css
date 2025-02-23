@@ -55,10 +55,8 @@
     background-color: var(--Neutral-Grayish-Blue);
 }
 
-.bg-primary-light-grayish-blue {
-    background-color: var(--Primary-Light-grayish-blue);
-}
 
+.bg-primary-light-grayish-blue,
 .bg-primary-light-grayish-blue-hover:hover, 
 .bg-primary-light-grayish-blue-focus:focus {
     background-color: var(--Primary-Light-grayish-blue);
