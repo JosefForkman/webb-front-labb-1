@@ -22,6 +22,7 @@
         <title>Josefs - Portfolio</title>
     </head>
     <body>
+        <a href="#main" class="sr-only">Hoppa över menyn</a>
         <header class="bg-neutral-light-gray">
             <label for="menu-toggle" aria-controls="menu">
                 <i class="fa-solid fa-bars fa-lg text-neutral-grayish-blue"></i>
@@ -46,7 +47,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main">
             <section class="introduction-WCAG">
                 <h1>Vad jag har gjort för att göra den användarvänligt</h1>
                 <p>
@@ -71,16 +72,39 @@
                 >
             </p>
             <p>
-                Något som är viktigt för mig är att göra hemsidor tillgängliga
-                för alla. Jag har försökt att tillämpa alla riktlinjer som jag
-                anser är tillämpbara på min portfolio. Föt att göra det så har
-                jag följt
-                <a
-                    href="https://www.digg.se/webbriktlinjer/alla-webbriktlinjer"
-                    target="_blank"
-                    >Digg - Myndigheten för digital förvaltning</a
-                >.
+                Jag har angett sidans språk i koden genom att använda
+                <code>lang="sv"</code> i <code>html</code>-taggen.
             </p>
+            <h2>Beskriv med text allt innehåll som inte är text</h2>
+            <p>
+                <a
+                    href="https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/beskriv-med-text-allt-innehall-som-inte-ar-text"
+                    target="_blank"
+                    >Länk till beskrivning av kriteriet</a
+                >
+            </p>
+            <p>
+                Jag har beskrivit med text allt innehåll som inte är text. Jag
+                har använt <code>alt</code>-attributet för att beskriva bilder.
+            </p>
+            <h2>Gör det möjligt att hoppa förbi återkommande innehåll</h2>
+            <p>
+                <a
+                    href="https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/gor-det-mojligt-att-hoppa-forbi-aterkommande-innehall"
+                    target="_blank"
+                    >Länk till beskrivning av kriteriet</a
+                >
+            </p>
+            <p>
+                Jag har gjort det möjligt att hoppa förbi menyn genom att lägga
+                till en länk som är osynlig för användaren. Länken är placerad i
+                början av sidan och har en klass som heter <code>sr-only</code>. Dena länk går till <code>&lt;main id="main">&lt;/main></code>.
+            </p>
+            <pre>
+<code>
+&lt;a href="#main" class="sr-only"&gt;Hoppa över menyn&lt;/a&gt;
+</code>
+</pre>
         </main>
     </body>
 </html>
