@@ -64,7 +64,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        background-color: transparent;
         padding-right: 1em;
         
         label {
@@ -292,7 +291,6 @@ main {
             border-radius: 0.5rem;
             border: 3px solid var(--Neutral-Light-gray);
             padding: 1.5em;
-            /* margin-block: 1.5rem; */
             overflow-x: auto;
         }
     }
@@ -311,4 +309,8 @@ main {
             font-weight: 500;
         }
     }
+}
+
+.introduction-WCAG {
+    margin-bottom: 3.5rem;
 }

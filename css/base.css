@@ -22,6 +22,10 @@ p {
     &:last-of-type {
         margin-bottom: 0;
     }
+    a {
+        color: var(--Neutral-Grayish-Blue);
+        font-weight: 500;
+    }
 }
 
 img {
@@ -98,12 +102,15 @@ form {
 .grid-container {
     --grid-min-width: 300px;
     --grid-gap: 1.5rem;
-    
+
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--grid-min-width)), 1fr));
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(100%, var(--grid-min-width)), 1fr)
+    );
     gap: var(--grid-gap);
 
-    list-style: none;;
+    list-style: none;
 }
 .card {
     padding: 1rem;
