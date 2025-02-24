@@ -285,14 +285,6 @@ main {
         flex-direction: column;
         gap: 1.4rem;
         margin-top: 1rem;
-        pre {
-            font-family: JetBrainsMono, serif;
-            background-color: var(--Neutral-Very-light-gray);
-            border-radius: 0.5rem;
-            border: 3px solid var(--Neutral-Light-gray);
-            padding: 1.5em;
-            overflow-x: auto;
-        }
     }
 }
 

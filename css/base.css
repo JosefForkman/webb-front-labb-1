@@ -33,7 +33,14 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+pre {
+    font-family: JetBrainsMono, serif;
+    background-color: var(--Neutral-Very-light-gray);
+    border-radius: 0.5rem;
+    border: 3px solid var(--Neutral-Light-gray);
+    padding: 1.5em;
+    overflow-x: auto;
+}
 .sr-only {
     position: absolute;
     width: 1px;
