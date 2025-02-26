@@ -55,48 +55,13 @@ header {
     }
 }
 
-@keyframes menuOpen {
-    0% {
-        display: none;
-        visibility: hidden;
-        transform: translateX(100%);
-    }
-    1% {
-        display: block;
-        visibility: visible;
-    }
-    100% {
-        display: block;
-        visibility: visible;
-        transform: translateX(0);
-    }
-    
-}
-
-@keyframes menuClose {
-    0% {
-        display: block;
-        visibility: visible;
-        transform: translateX(0);
-    }
-    99% {
-        display: block;
-        visibility: visible;
-    }
-    100% {
-        display: none;
-        visibility: hidden;
-        transform: translateX(100%);
-    }
-}
-
 @media screen and (width < 570px) {
     header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding-right: 1em;
-        
+
         label {
             display: block;
             cursor: pointer;
@@ -110,7 +75,7 @@ header {
 
         input[type="checkbox"] {
             display: none;
-    
+
             &:checked ~ nav {
                 display: block;
                 animation: 0.3s menuOpen ease-in-out forwards;
@@ -127,7 +92,6 @@ header {
             top: 6rem;
             right: 0;
             transform: translateX(100%);
-            /* transition: 0.3s transform ease-in-out; */
             background-color: var(--Neutral-Light-gray);
             padding: 1em;
             border-radius: 0.5em 0 0 0.5em;
@@ -137,6 +101,40 @@ header {
                 align-items: flex-end;
                 flex-direction: column;
             }
+        }
+    }
+
+    @keyframes menuOpen {
+        0% {
+            display: none;
+            visibility: hidden;
+            transform: translateX(100%);
+        }
+        1% {
+            display: block;
+            visibility: visible;
+        }
+        100% {
+            display: block;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes menuClose {
+        0% {
+            display: block;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        99% {
+            display: block;
+            visibility: visible;
+        }
+        100% {
+            display: none;
+            visibility: hidden;
+            transform: translateX(100%);
         }
     }
 }
@@ -203,7 +201,7 @@ main {
 }
 
 @media screen and (width > 768px) {
-    .contact-wrapper  {
+    .contact-wrapper {
         img {
             justify-self: center;
             width: 200px;
