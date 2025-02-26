@@ -22,22 +22,12 @@ header {
     }
     input[type="checkbox"] {
         display: none;
-
-        &:checked ~ nav {
-            display: block;
-            animation: 0.3s menuOpen ease-in-out forwards;
-        }
-        &:not(:checked) ~ nav {
-            display: none;
-            animation: 0.3s menuClose ease-in-out forwards;
-        }
     }
     label {
         display: none;
         font-size: 1.5rem;
     }
     nav {
-        display: none;
         ul {
             display: flex;
             justify-content: center;
@@ -117,7 +107,22 @@ header {
             background-color: transparent;
             border: none;
         }
+
+        input[type="checkbox"] {
+            display: none;
+    
+            &:checked ~ nav {
+                display: block;
+                animation: 0.3s menuOpen ease-in-out forwards;
+            }
+            &:not(:checked) ~ nav {
+                display: none;
+                animation: 0.3s menuClose ease-in-out forwards;
+            }
+        }
+
         nav {
+            display: none;
             position: absolute;
             top: 6rem;
             right: 0;
