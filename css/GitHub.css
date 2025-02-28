@@ -1,0 +1,16 @@
+[data-path="README.md"] .markdown-heading {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+[data-path="README.md"] ul {
+    color: var(--Neutral-Grayish-Blue);
+    list-style: none;
+}
+
+[data-path="README.md"] ol {
+    color: var(--Neutral-Grayish-Blue);
+    padding-left: 1.5em;
+    margin-left: 1rem;
+}

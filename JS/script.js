@@ -70,7 +70,7 @@ const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
                 repo: title,
                 headers: {
                     "X-GitHub-Api-Version": "2022-11-28",
-                    "accept": "application/vnd.github+json",
+                    "accept": "application/vnd.github.html+json",
                 },
             },
         );
