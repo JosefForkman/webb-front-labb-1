@@ -14,3 +14,8 @@
     padding-left: 1.5em;
     margin-left: 1rem;
 }
+
+[data-path="README.md"] a {
+    color: var(--Neutral-Grayish-Blue);
+    font-weight: 500;
+}
