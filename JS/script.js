@@ -1,24 +1,22 @@
-import { Octokit } from "https://esm.sh/octokit";
 import { createDialog, createLinks } from "./components.js";
+import { getProjects } from "./getProjects.js";
 const educationContainer = document.querySelector("#education ul");
 
-const octokit = new Octokit();
 
-async () => {
+(async () => {
     try {
+        const repos = await getProjects();
         const ul = document.querySelector("#projects-list");
-        const { data: repos } = await octokit.request(
-            "GET /users/{username}/repos?per_page=4&page=0&sort=updated",
-            {
-                username: "JosefForkman",
-            },
-        );
-        repos.forEach(async (repo, index) => {
+        console.log(repos);
+        
+        ul.innerHTML = "";
+        repos.forEach(async (repo) => {
             const li = document.createElement("li");
             const dialog = await createDialog(
                 repo.name,
                 repo.html_url,
                 repo.homepage,
+                repo.description,
                 [repo.owner],
             );
             li.classList.add("card");
@@ -35,11 +33,10 @@ async () => {
 
                 ${dialog.outerHTML}
             `;
-            ul.children.item(index).remove();
             ul.appendChild(li);
         });
     } catch (error) {}
-};
+})();
 
 (async () => {
     try {
