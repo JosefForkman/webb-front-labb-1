@@ -31,7 +31,7 @@ const createLinks = (webURL, GitHubURL) => {
     return links.outerHTML;
 };
 
-const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
+const createDialog = async (title, webURL, GitHubURL, bodyContent, contributors = []) => {
     const dialog = document.createElement("dialog");
     dialog.classList.add("modal");
     dialog.setAttribute("popover", "auto");
@@ -53,30 +53,6 @@ const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
             `;
             contributorsList.appendChild(li);
         });
-    }
-
-    let bodyContent = "";
-    try {
-        const { data } = await octokit.request(
-            "GET /repos/{owner}/{repo}/readme",
-            {
-                owner: "JosefForkman",
-                repo: title,
-                headers: {
-                    "X-GitHub-Api-Version": "2022-11-28",
-                    "accept": "application/vnd.github.html+json",
-                },
-            },
-        );
-        if (data.content) {
-            bodyContent = atob(data.content);
-        } else if (data) {
-            bodyContent = data;
-        } else {
-            bodyContent = "Kunde inte hitta någon Readme";
-        }
-    } catch (error) {
-        console.error(error);
     }
 
     dialog.innerHTML = `
