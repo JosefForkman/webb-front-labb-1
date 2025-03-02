@@ -19,7 +19,7 @@ const createLinks = (webURL, GitHubURL) => {
             <div class="link">
                 <a
                     target="_blank"
-                    href="https://frontendmentor-interactive-comments.vercel.app/"
+                    href="${GitHubURL}"
                     class="text-neutral-grayish-blue">
                     <i
                         class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
