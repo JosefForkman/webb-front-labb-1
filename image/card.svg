@@ -1,0 +1,69 @@
+<svg viewBox="0 0 358 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg-card-gradient">
+            <stop
+                offset="0%"
+                stop-color="#C3C4EF">
+                <animate
+                    attributeName="stop-color"
+                    values="#C3C4EF; #E0E1FF; #C3C4EF"
+                    dur="3s"
+                    repeatCount="indefinite" />
+            </stop>
+            <stop
+                offset="100%"
+                stop-color="#E0E1FF">
+                <animate
+                    attributeName="stop-color"
+                    values="#C3C4EF; #E0E1FF; #C3C4EF"
+                    dur="3s"
+                    repeatCount="indefinite" />
+            </stop>
+        </linearGradient>
+    </defs>
+    <g fill="url(#bg-card-gradient)">
+        <rect
+            x="1.5"
+            y="1.5"
+            width="355"
+            height="177"
+            rx="6.5"
+            stroke="#C3C4EF"
+            fill="transparent"
+            stroke-width="3" />
+        <path
+            d="M16 20C16 17.7909 17.7909 16 20 16H36C36.5523 16 37 16.4477 37 17V39C37 39.5523 36.5523 40 36 40H20C17.7909 40 16 38.2091 16 36V20Z" />
+        <rect
+            x="53"
+            y="16"
+            width="289"
+            height="16"
+            rx="8" />
+        <rect
+            x="53"
+            y="42"
+            width="289"
+            height="16"
+            rx="8" />
+        <circle cx="28" cy="102" r="12" />
+        <rect
+            x="48"
+            y="95"
+            width="51"
+            height="14"
+            rx="7" />
+        <circle cx="127" cy="102" r="12" />
+        <rect
+            x="147"
+            y="95"
+            width="59"
+            height="14"
+            rx="7" />
+        <rect
+            x="16"
+            y="130"
+            width="326"
+            height="34"
+            rx="8" />
+    </g>
+</svg>

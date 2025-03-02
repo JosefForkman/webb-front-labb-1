@@ -121,11 +121,7 @@ const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
                 username: "JosefForkman",
             },
         );
-        console.log(repos);
-        const repo = repos[0];
-        console.log(repo);
-
-        repos.forEach(async (repo) => {
+        repos.forEach(async (repo, index) => {
             const li = document.createElement("li");
             const dialog = await createDialog(
                 repo.name,
@@ -147,6 +143,7 @@ const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
 
                 ${dialog.outerHTML}
             `;
+            ul.children.item(index).remove()
             ul.appendChild(li);
         });
     } catch (error) {}
@@ -157,6 +154,7 @@ const createDialog = async (title, webURL, GitHubURL, contributors = []) => {
         const response = await fetch("/Education.json");
         const data = await response.json();
         educationContainer.innerHTML = "";
+
         data.forEach((education) => {
             const li = document.createElement("li");
             li.classList.add("card");
