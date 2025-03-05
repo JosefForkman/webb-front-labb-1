@@ -40,6 +40,7 @@ const createDialog = async (
 ) => {
     const dialog = document.createElement("dialog");
     dialog.classList.add("modal");
+    dialog.classList.add("bg-gray-100");
     dialog.setAttribute("popover", "auto");
     dialog.id = title;
 
@@ -62,7 +63,7 @@ const createDialog = async (
     }
 
     dialog.innerHTML = `
-        <div class="content bg-gray-100">
+        <div class="content">
             <div class="header">
                 <button
                     popovertargetaction="hide"
