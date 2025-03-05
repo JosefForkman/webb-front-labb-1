@@ -7,9 +7,9 @@ const createLinks = (webURL, GitHubURL) => {
             <a
                 target="_blank"
                 href="${webURL}"
-                class="text-neutral-grayish-blue">
+                class="text-gray-400">
                 <i
-                    class="fa-brands fa-github fa-xl text-neutral-moderate-blue"></i>
+                    class="fa-brands fa-github fa-xl text-blue-400"></i>
                 Github</a
             >
         </div>
@@ -20,7 +20,7 @@ const createLinks = (webURL, GitHubURL) => {
                 <a
                     target="_blank"
                     href="${GitHubURL}"
-                    class="text-neutral-grayish-blue">
+                    class="text-gray-400">
                     <i
                         class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
                     Hemsida</a
@@ -31,7 +31,13 @@ const createLinks = (webURL, GitHubURL) => {
     return links.outerHTML;
 };
 
-const createDialog = async (title, webURL, GitHubURL, bodyContent, contributors = []) => {
+const createDialog = async (
+    title,
+    webURL,
+    GitHubURL,
+    bodyContent,
+    contributors = [],
+) => {
     const dialog = document.createElement("dialog");
     dialog.classList.add("modal");
     dialog.setAttribute("popover", "auto");
@@ -47,7 +53,7 @@ const createDialog = async (title, webURL, GitHubURL, bodyContent, contributors 
                 <a
                     href="${contributor.html_url}"
                     target="_blank"
-                    class="text-neutral-grayish-blue"
+                    class="text-gray-400"
                     >${contributor.login}</a
                 >
             `;
@@ -56,13 +62,13 @@ const createDialog = async (title, webURL, GitHubURL, bodyContent, contributors 
     }
 
     dialog.innerHTML = `
-        <div class="content bg-neutral-white">
+        <div class="content bg-gray-100">
             <div class="header">
                 <button
                     popovertargetaction="hide"
                     popovertarget="${title}">
                     <i
-                        class="fa-solid fa-times fa-lg text-neutral-moderate-blue text-neutral-grayish-blue-hover"></i>
+                        class="fa-solid fa-times fa-lg text-blue-400 text-gray-400-hover"></i>
                 </button>
             </div>
             <div class="body">

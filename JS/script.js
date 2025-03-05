@@ -2,13 +2,12 @@ import { createDialog, createLinks } from "./components.js";
 import { getProjects } from "./getProjects.js";
 const educationContainer = document.querySelector("#education ul");
 
-
 (async () => {
     try {
         const repos = await getProjects();
         const ul = document.querySelector("#projects-list");
         console.log(repos);
-        
+
         ul.innerHTML = "";
         repos.forEach(async (repo) => {
             const li = document.createElement("li");
@@ -21,13 +20,13 @@ const educationContainer = document.querySelector("#education ul");
             );
             li.classList.add("card");
             li.innerHTML = `
-                <h3><i class="fa-solid fa-book-bookmark fa-xl text-neutral-moderate-blue"></i> ${
+                <h3><i class="fa-solid fa-book-bookmark fa-xl text-blue-400"></i> ${
                     repo.name
                 }</h3>
                 ${createLinks(repo.html_url, repo.homepage)}
                 <button
                     popovertarget="${repo.name}"
-                    class="btn w100 text-neutral-white bg-neutral-moderate-blue bg-primary-light-grayish-blue-hover bg-primary-light-grayish-blue-focus">
+                    class="btn w100 text-gray-100 bg-blue-400 bg-blue-200-hover bg-blue-200-focus">
                     Läs mera
                 </button>
 

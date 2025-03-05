@@ -25,9 +25,9 @@
     </head>
     <body>
         <a href="#main" class="sr-only">Hoppa över menyn</a>
-        <header class="bg-neutral-light-gray">
+        <header class="bg-gray-200">
             <label for="menu-toggle" aria-controls="menu">
-                <i class="fa-solid fa-bars fa-lg text-neutral-grayish-blue"></i>
+                <i class="fa-solid fa-bars fa-lg text-gray-800"></i>
             </label>
             <input type="checkbox" id="menu-toggle" />
             <nav id="menu" aria-expanded="false">
@@ -55,12 +55,12 @@
         </header>
         <main id="main">
             <section class="hero">
-                <div class="profile-image-container bg-neutral-light-gray">
+                <div class="profile-image-container bg-gray-200">
                     <img
                         src="/image/IMG_20220830_062002.jpg"
                         alt="Josef i blå T-shirt med ett träd i bakgrunden, blå himmel" />
-                    <h1>Josef Forkman</h1>
-                    <p>Webb utvecklare</p>
+                    <h1 class="text-gray-900">Josef Forkman</h1>
+                    <p class="text-gray-900">Webb utvecklare</p>
                 </div>
                 <div>
                     <p>
@@ -69,7 +69,7 @@
                         Jag är bland annat en Next & SvelteKit utvecklare
                     </p>
                     <button
-                        class="btn text-neutral-white bg-primary-soft-red bg-primary-pale-red-hover bg-primary-pale-red-focus">
+                        class="btn text-gray-100 bg-primary-soft-red bg-primary-pale-red-hover bg-primary-pale-red-focus">
                         Kontakta mig
                     </button>
                 </div>
@@ -117,13 +117,13 @@
                         cyklar.
                     </p>
 
-                    <ul class="text-neutral-grayish-blue">
+                    <ul class="text-gray-400">
                         <li>Laravel</li>
                         <li>PHP</li>
                         <li>React</li>
                         <li>Node.js</li>
                     </ul>
-                    <ul class="text-neutral-grayish-blue">
+                    <ul class="text-gray-400">
                         <li>Sass</li>
                         <li>JavaSkript</li>
                         <li>Css</li>
@@ -138,16 +138,16 @@
                         <!-- <li class="card">
                             <h3 class="loding">
                                 <i
-                                    class="fa-solid fa-book-bookmark fa-xl text-neutral-moderate-blue"></i>
+                                    class="fa-solid fa-book-bookmark fa-xl text-blue-400"></i>
                             </h3>
                             <div class="links">
                                 <div class="link">
                                     <a
                                         target="_blank"
                                         href="https://github.com/JosefForkman/Frontendmentor-interactive-comments"
-                                        class="text-neutral-grayish-blue">
+                                        class="text-gray-400">
                                         <i
-                                            class="fa-brands fa-github fa-xl text-neutral-moderate-blue"></i>
+                                            class="fa-brands fa-github fa-xl text-blue-400"></i>
                                         Github</a
                                     >
                                 </div>
@@ -155,7 +155,7 @@
                                     <a
                                         target="_blank"
                                         href="https://frontendmentor-interactive-comments.vercel.app/"
-                                        class="text-neutral-grayish-blue">
+                                        class="text-gray-400">
                                         <i
                                             class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
                                         Hemsida</a
@@ -164,18 +164,18 @@
                             </div>
                             <button
                                 popovertarget="project-1"
-                                class="btn w100 text-neutral-white bg-neutral-moderate-blue bg-primary-light-grayish-blue-hover bg-primary-light-grayish-blue-focus">
+                                class="btn w100 text-gray-100 bg-blue-400 bg-blue-200-hover bg-blue-200-focus">
                                 Läs mera
                             </button>
 
                             <dialog id="project-1" popover class="modal">
-                                <div class="content bg-neutral-white">
+                                <div class="content bg-gray-100">
                                     <div class="header">
                                         <button
                                             popovertargetaction="hide"
                                             popovertarget="project-1">
                                             <i
-                                                class="fa-solid fa-times fa-lg text-neutral-moderate-blue text-neutral-grayish-blue-hover"></i>
+                                                class="fa-solid fa-times fa-lg text-blue-400 text-gray-400-hover"></i>
                                         </button>
                                     </div>
                                     <div class="body">
@@ -187,9 +187,9 @@
                                                 <a
                                                     target="_blank"
                                                     href="https://github.com/JosefForkman/Frontendmentor-interactive-comments"
-                                                    class="text-neutral-grayish-blue">
+                                                    class="text-gray-400">
                                                     <i
-                                                        class="fa-brands fa-github fa-xl text-neutral-moderate-blue"></i>
+                                                        class="fa-brands fa-github fa-xl text-blue-400"></i>
                                                     Github</a
                                                 >
                                             </div>
@@ -197,7 +197,7 @@
                                                 <a
                                                     target="_blank"
                                                     href="https://frontendmentor-interactive-comments.vercel.app/"
-                                                    class="text-neutral-grayish-blue">
+                                                    class="text-gray-400">
                                                     <i
                                                         class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
                                                     Hemsida</a
@@ -211,7 +211,7 @@
                                                     <a
                                                         href="https://github.com/JosefForkman/"
                                                         target="_blank"
-                                                        class="text-neutral-grayish-blue"
+                                                        class="text-gray-400"
                                                         >Josef Forkman</a
                                                     >
                                                 </li>
@@ -240,7 +240,7 @@
                                             guns boat warp ketch driver. Prey
                                             ipsum tell rig topmast tales ahoy.
                                         </p>
-                                        <ul class="text-neutral-grayish-blue">
+                                        <ul class="text-gray-400">
                                             <li>Lorem ipsum dolor</li>
                                             <li>Sit amet consectetur</li>
                                             <li>Adipiscing elit sed</li>
@@ -258,21 +258,29 @@
                             </dialog>
                         </li> -->
                         <li>
-                            <img src="./image/card.svg" alt="Ett Kort som laddas in och har en skelton animation" />
+                            <img
+                                src="./image/card.svg"
+                                alt="Ett Kort som laddas in och har en skelton animation" />
                         </li>
                         <li>
-                            <img src="./image/card.svg" alt="Ett Kort som laddas in och har en skelton animation" />
+                            <img
+                                src="./image/card.svg"
+                                alt="Ett Kort som laddas in och har en skelton animation" />
                         </li>
                         <li>
-                            <img src="./image/card.svg" alt="Ett Kort som laddas in och har en skelton animation" />
+                            <img
+                                src="./image/card.svg"
+                                alt="Ett Kort som laddas in och har en skelton animation" />
                         </li>
                         <li>
-                            <img src="./image/card.svg" alt="Ett Kort som laddas in och har en skelton animation" />
+                            <img
+                                src="./image/card.svg"
+                                alt="Ett Kort som laddas in och har en skelton animation" />
                         </li>
                         <!-- <li class="card">
                             <h3>
                                 <i
-                                    class="fa-solid fa-book-bookmark fa-xl text-neutral-moderate-blue"></i>
+                                    class="fa-solid fa-book-bookmark fa-xl text-blue-400"></i>
                                 Frontend-mentor-interactive-comments
                             </h3>
                             <div class="links">
@@ -280,9 +288,9 @@
                                     <a
                                         target="_blank"
                                         href="https://github.com/JosefForkman/Frontendmentor-interactive-comments"
-                                        class="text-neutral-grayish-blue">
+                                        class="text-gray-400">
                                         <i
-                                            class="fa-brands fa-github fa-xl text-neutral-moderate-blue"></i>
+                                            class="fa-brands fa-github fa-xl text-blue-400"></i>
                                         Github</a
                                     >
                                 </div>
@@ -290,7 +298,7 @@
                                     <a
                                         target="_blank"
                                         href="https://frontendmentor-interactive-comments.vercel.app/"
-                                        class="text-neutral-grayish-blue">
+                                        class="text-gray-400">
                                         <i
                                             class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
                                         Hemsida</a
@@ -299,18 +307,18 @@
                             </div>
                             <button
                                 popovertarget="project-1"
-                                class="btn w100 text-neutral-white bg-neutral-moderate-blue bg-primary-light-grayish-blue-hover bg-primary-light-grayish-blue-focus">
+                                class="btn w100 text-gray-100 bg-blue-400 bg-blue-200-hover bg-blue-200-focus">
                                 Läs mera
                             </button>
 
                             <dialog id="project-1" popover class="modal">
-                                <div class="content bg-neutral-white">
+                                <div class="content bg-gray-100">
                                     <div class="header">
                                         <button
                                             popovertargetaction="hide"
                                             popovertarget="project-1">
                                             <i
-                                                class="fa-solid fa-times fa-lg text-neutral-moderate-blue text-neutral-grayish-blue-hover"></i>
+                                                class="fa-solid fa-times fa-lg text-blue-400 text-gray-400-hover"></i>
                                         </button>
                                     </div>
                                     <div class="body">
@@ -322,9 +330,9 @@
                                                 <a
                                                     target="_blank"
                                                     href="https://github.com/JosefForkman/Frontendmentor-interactive-comments"
-                                                    class="text-neutral-grayish-blue">
+                                                    class="text-gray-400">
                                                     <i
-                                                        class="fa-brands fa-github fa-xl text-neutral-moderate-blue"></i>
+                                                        class="fa-brands fa-github fa-xl text-blue-400"></i>
                                                     Github</a
                                                 >
                                             </div>
@@ -332,7 +340,7 @@
                                                 <a
                                                     target="_blank"
                                                     href="https://frontendmentor-interactive-comments.vercel.app/"
-                                                    class="text-neutral-grayish-blue">
+                                                    class="text-gray-400">
                                                     <i
                                                         class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
                                                     Hemsida</a
@@ -346,7 +354,7 @@
                                                     <a
                                                         href="https://github.com/JosefForkman/"
                                                         target="_blank"
-                                                        class="text-neutral-grayish-blue"
+                                                        class="text-gray-400"
                                                         >Josef Forkman</a
                                                     >
                                                 </li>
@@ -375,7 +383,7 @@
                                             guns boat warp ketch driver. Prey
                                             ipsum tell rig topmast tales ahoy.
                                         </p>
-                                        <ul class="text-neutral-grayish-blue">
+                                        <ul class="text-gray-400">
                                             <li>Lorem ipsum dolor</li>
                                             <li>Sit amet consectetur</li>
                                             <li>Adipiscing elit sed</li>
@@ -436,28 +444,26 @@
                         <div class="contact-card">
                             <p class="contact-grope">
                                 <i
-                                    class="fa-solid fa-comment-sms fa-xl text-primary-light-grayish-blue"></i>
-                                <a
-                                    href="tel:+46727008222"
-                                    class="text-neutral-grayish-blue"
+                                    class="fa-solid fa-comment-sms fa-xl text-blue-200"></i>
+                                <a href="tel:+46727008222" class="text-gray-400"
                                     >072-700 82 22</a
                                 >
                             </p>
                             <p class="contact-grope">
                                 <i
-                                    class="fas fa-envelope fa-xl text-primary-light-grayish-blue"></i>
+                                    class="fas fa-envelope fa-xl text-blue-200"></i>
                                 <a
                                     href="mailto:josef@forkman.dev"
-                                    class="text-neutral-grayish-blue"
+                                    class="text-gray-400"
                                     >josef@forkman.dev</a
                                 >
                             </p>
                             <p class="contact-grope">
                                 <i
-                                    class="fa-brands fa-linkedin fa-xl text-primary-light-grayish-blue"></i>
+                                    class="fa-brands fa-linkedin fa-xl text-blue-200"></i>
                                 <a
                                     href="https://www.linkedin.com/in/josef-forkman/"
-                                    class="text-neutral-grayish-blue"
+                                    class="text-gray-400"
                                     >Linkedin</a
                                 >
                             </p>
@@ -492,7 +498,7 @@
 
                         <button
                             type="submit"
-                            class="btn text-neutral-white bg-neutral-moderate-blue bg-primary-light-grayish-blue-hover bg-primary-light-grayish-blue-focus">
+                            class="btn text-gray-100 bg-blue-400 bg-blue-200-hover bg-blue-200-focus">
                             Skicka
                         </button>
                     </form>

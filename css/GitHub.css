@@ -5,17 +5,17 @@
 }
 
 [data-path="README.md"] ul {
-    color: var(--Neutral-Grayish-Blue);
+    color: var(--gray-400);
     list-style: none;
 }
 
 [data-path="README.md"] ol {
-    color: var(--Neutral-Grayish-Blue);
+    color: var(--gray-400);
     padding-left: 1.5em;
     margin-left: 1rem;
 }
 
 [data-path="README.md"] a {
-    color: var(--Neutral-Grayish-Blue);
+    color: var(--gray-400);
     font-weight: 500;
 }

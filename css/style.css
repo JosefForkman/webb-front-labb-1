@@ -11,7 +11,7 @@
 }
 body {
     font-family: "Roboto Mono", serif;
-    background-color: var(--Neutral-White);
+    background-color: var(--gray-100);
 }
 
 header {
@@ -96,7 +96,7 @@ header {
                 gap: 1rem;
                 align-items: flex-end;
                 flex-direction: column;
-                background-color: var(--Neutral-Light-gray);
+                background-color: var(--gray-300);
                 padding: 1em;
                 border-radius: 0.5em 0 0 0.5em;
             }

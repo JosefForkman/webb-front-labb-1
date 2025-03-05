@@ -6,14 +6,14 @@
 h1,
 h2,
 h3 {
-    color: var(--Neutral-Dark-blue);
+    color: var(--blue-400);
     margin-bottom: 0.5em;
 }
 
 p {
     font-size: 0.875rem;
     line-height: 1.5;
-    color: var(--Neutral-Grayish-Blue);
+    color: var(--gray-400);
 
     max-width: 75ch;
 
@@ -23,7 +23,7 @@ p {
         margin-bottom: 0;
     }
     a {
-        color: var(--Neutral-Grayish-Blue);
+        color: var(--gray-400);
         font-weight: 500;
     }
 }
@@ -35,9 +35,9 @@ img {
 }
 pre {
     font-family: JetBrainsMono, serif;
-    background-color: var(--Neutral-Very-light-gray);
+    background-color: var(--gray-200);
     border-radius: 0.5rem;
-    border: 3px solid var(--Neutral-Light-gray);
+    border: 3px solid var(--gray-300);
     padding: 1.5em;
     overflow-x: auto;
 }
@@ -85,20 +85,20 @@ form {
         label {
             font-size: 0.875rem;
             font-weight: bold;
-            color: var(--Neutral-Dark-blue);
+            color: var(--blue-400);
         }
 
         input,
         textarea {
             font-size: 0.875rem;
-            background-color: var(--Neutral-Very-light-gray);
+            background-color: var(--gray-200);
             padding: 0.5em 1em;
             border-radius: 0.5em;
-            border: 3px solid var(--Neutral-Light-gray);
+            border: 3px solid var(--gray-300);
 
             &:focus {
                 outline: 0px;
-                border-color: var(--Primary-Moderate-blue);
+                border-color: var(--blue-400);
             }
         }
 
@@ -134,5 +134,5 @@ form {
 .card {
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 3px solid var(--Primary-Light-grayish-blue);
+    border: 3px solid var(--blue-200);
 }
