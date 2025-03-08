@@ -196,8 +196,14 @@ main {
 @media screen and (width > 768px) {
     .contact-wrapper {
         img {
-            justify-self: center;
             width: 200px;
+        }
+
+        #esster-egg {
+            justify-self: center;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
         }
     }
 }
@@ -225,6 +231,7 @@ main {
     height: calc(100% - var(--modal-padding-block) * 2);
     width: calc(100% - var(--modal-padding-inline) * 2);
 
+    border-radius: 0.5rem;
     border: 0px;
 
     &::backdrop {
@@ -232,7 +239,6 @@ main {
     }
     .content {
         padding: 1rem;
-        border-radius: 0.5rem;
         overflow-y: auto;
 
         .header {
@@ -240,6 +246,7 @@ main {
             justify-content: flex-end;
 
             button {
+                align-self: flex-end;
                 font-size: 1.5rem;
                 background-color: transparent;
                 border: none;
@@ -247,7 +254,10 @@ main {
                 width: auto;
             }
         }
-
+        img {
+            width: 100%;
+            margin-block: 1rem;
+        }
         .contributors {
             margin-bottom: 1.4rem;
         }

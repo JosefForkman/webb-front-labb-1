@@ -1,6 +1,13 @@
 import { createDialog, createLinks } from "./components.js";
 import { getProjects } from "./getProjects.js";
+import { useClientTheme, useSystemTheme } from "./Theme.js";
 const educationContainer = document.querySelector("#education ul");
+
+// Ester egg
+const esterEgg = document.querySelector("#esster-egg");
+const esterEggDialog = document.querySelector("#esster-egg-dialog");
+let esterEggInput = "";
+let esterEggDialogKeyPressCount = 0;
 
 (async () => {
     try {
@@ -58,3 +65,44 @@ const educationContainer = document.querySelector("#education ul");
         });
     } catch (error) {}
 })();
+
+// Ester egg
+esterEgg.addEventListener("click", () => {
+    const theme = useClientTheme();
+    const systemTheme = useSystemTheme();
+    const html = document.querySelector("html").classList;
+
+    if (theme === "light") {
+        html.remove("light-theme");
+        html.add("dark-theme");
+    } else if (theme === "dark") {
+        html.remove("dark-theme");
+        html.add("light-theme");
+    } else if (theme === "system") {
+        if (systemTheme === "dark") {
+            html.remove("dark-theme");
+            html.add("light-theme");
+        } else {
+            html.remove("light-theme");
+            html.add("dark-theme");
+        }
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    const secretCode =
+    "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRight";
+    
+    esterEggDialogKeyPressCount++;
+    esterEggInput += event.key;
+
+    if (secretCode.localeCompare(esterEggInput) === 0) {
+        esterEggDialog.showModal();
+        esterEggInput = "";
+    }
+
+    if (esterEggDialogKeyPressCount >= 8) {
+        esterEggInput = "";
+        esterEggDialogKeyPressCount = 0;
+    }
+});
