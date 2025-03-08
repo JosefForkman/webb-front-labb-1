@@ -119,7 +119,7 @@ form {
 }
 
 .grid-container {
-    --grid-min-width: 300px;
+    --grid-min-width: 320px;
     --grid-gap: 1.5rem;
 
     display: grid;
