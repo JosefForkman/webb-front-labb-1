@@ -54,13 +54,32 @@ let esterEggDialogKeyPressCount = 0;
             const li = document.createElement("li");
             li.classList.add("card");
 
-            const startDate = new Date(education.startDate).getFullYear();
-            const endDate = new Date(education.endDate).getFullYear();
+            const startDate = new Date(education.startDate);
+            const endDate = new Date(education.endDate);
 
             li.innerHTML = `
                 <h3>${education.name}</h3>
-                <p>${education.roll} ${startDate}-${endDate}</p>
             `;
+
+            if (startDate.getTime() === endDate.getTime()) {
+                li.innerHTML += `
+                    <p>${education.roll} ${startDate.getFullYear()}</p>
+                `;
+            } else if (startDate.getMonth() <= 6 && endDate.getMonth() <= 6) {
+                li.innerHTML += `
+                    <p>${education.roll} VT-${startDate.getFullYear()}</p>
+                `;
+            } else if (startDate.getMonth() > 6 && endDate.getMonth() > 6) {
+                li.innerHTML += `
+                    <p>${education.roll} HT-${startDate.getFullYear()}</p>
+                `;
+            } else {
+                li.innerHTML += `
+                    <p>${
+                        education.roll
+                    } ${startDate.getFullYear()}-${endDate.getFullYear()}</p>
+                `;
+            }
             educationContainer.appendChild(li);
         });
     } catch (error) {}
@@ -91,8 +110,8 @@ esterEgg.addEventListener("click", () => {
 
 document.addEventListener("keydown", (event) => {
     const secretCode =
-    "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRight";
-    
+        "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRight";
+
     esterEggDialogKeyPressCount++;
     esterEggInput += event.key;
 
