@@ -173,10 +173,9 @@ main {
         p {
             font-weight: 300;
         }
-
-        button {
-            margin-top: 4px;
-        }
+    }
+    .action-btn {
+        margin-top: 0.5rem;
     }
 }
 
@@ -191,6 +190,12 @@ main {
         flex-direction: column;
         gap: 0.5rem;
     }
+
+    #esster-egg {
+        background-color: transparent;
+        border: 0px;
+        cursor: pointer;
+    }
 }
 
 @media screen and (width > 768px) {
@@ -201,9 +206,6 @@ main {
 
         #esster-egg {
             justify-self: center;
-            background-color: transparent;
-            border: 0px;
-            cursor: pointer;
         }
     }
 }
