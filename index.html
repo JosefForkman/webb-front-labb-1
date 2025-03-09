@@ -26,27 +26,22 @@
     <body>
         <a href="#main" class="sr-only">Hoppa över menyn</a>
         <header class="bg-gray-200">
-            <label for="menu-toggle" aria-controls="menu">
-                <i class="fa-solid fa-bars fa-lg text-gray-800"></i>
-            </label>
-            <input type="checkbox" id="menu-toggle" />
+            <button class="menu-btn" aria-controls="menu">
+                <span class="sr-only">Meny</span>
+                <i class="fa-solid fa-bars fa-lg text-gray-900"></i>
+            </button>
             <nav id="menu" aria-expanded="false">
                 <ul>
                     <li>
-                        <a
-                            href="/"
-                            class="text-primary-soft-red"
-                            aria-current="page"
+                        <a href="/" class="text-red-800" aria-current="page"
                             >Hem</a
                         >
                     </li>
                     <li>
-                        <a href="/Blogg" class="text-primary-soft-red">Blogg</a>
+                        <a href="/Blogg" class="text-red-800">Blogg</a>
                     </li>
                     <li>
-                        <a
-                            href="/webGuidelines.html"
-                            class="text-primary-soft-red"
+                        <a href="/webGuidelines.html" class="text-red-800"
                             >Webbriktlinjer</a
                         >
                     </li>
@@ -70,7 +65,7 @@
                     </p>
                     <a
                         href="#contact-Section"
-                        class="btn action-btn text-gray-100 bg-primary-soft-red bg-primary-pale-red-hover bg-primary-pale-red-focus">
+                        class="btn action-btn text-gray-100 bg-red-800 bg-red-200-hover bg-red-200-focus">
                         Kontakta mig
                     </a>
                 </div>
@@ -158,7 +153,7 @@
                                         href="https://frontendmentor-interactive-comments.vercel.app/"
                                         class="text-gray-400">
                                         <i
-                                            class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
+                                            class="fa-solid fa-globe fa-xl text-red-800"></i>
                                         Hemsida</a
                                     >
                                 </div>
@@ -200,7 +195,7 @@
                                                     href="https://frontendmentor-interactive-comments.vercel.app/"
                                                     class="text-gray-400">
                                                     <i
-                                                        class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
+                                                        class="fa-solid fa-globe fa-xl text-red-800"></i>
                                                     Hemsida</a
                                                 >
                                             </div>
@@ -301,7 +296,7 @@
                                         href="https://frontendmentor-interactive-comments.vercel.app/"
                                         class="text-gray-400">
                                         <i
-                                            class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
+                                            class="fa-solid fa-globe fa-xl text-red-800"></i>
                                         Hemsida</a
                                     >
                                 </div>
@@ -343,7 +338,7 @@
                                                     href="https://frontendmentor-interactive-comments.vercel.app/"
                                                     class="text-gray-400">
                                                     <i
-                                                        class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
+                                                        class="fa-solid fa-globe fa-xl text-red-800"></i>
                                                     Hemsida</a
                                                 >
                                             </div>
@@ -470,6 +465,7 @@
                             </p>
                         </div>
                         <button id="esster-egg">
+                            <span class="sr-only">Aktiverar esster egg och byter färg tema</span>
                             <img src="image/39320.svg" alt="" />
                         </button>
                     </div>
@@ -482,6 +478,14 @@
                         <div class="form-group">
                             <label for="name">Namn</label>
                             <input type="text" id="name" name="name" required />
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="name"
+                                aria-live="polite">
+                                Namn input fält är obligatoriskt. Fyll i detta
+                                fält så det ser ut till exempel så här "Jon doe".
+                            </p>
                         </div>
                         <div class="form-group">
                             <label for="email">E-post</label>
@@ -490,6 +494,14 @@
                                 id="email"
                                 name="email"
                                 required />
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="email"
+                                aria-live="polite">
+                                E-post input fält är obligatoriskt och måste
+                                vara en e-post. Fyll i detta fält så det ser ut till exempel så här "Jon.doe@exampel.com".
+                            </p>
                         </div>
                         <div class="form-group">
                             <label for="message">Meddelande</label>
@@ -497,6 +509,14 @@
                                 id="message"
                                 name="message"
                                 required></textarea>
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="message"
+                                aria-live="polite">
+                                Medelande input fält är obligatoriskt. Fyll i
+                                detta fält.
+                            </p>
                         </div>
 
                         <button
@@ -535,5 +555,6 @@
             </div>
         </dialog>
         <script type="module" src="JS/script.js"></script>
+        <script src="JS/menu.js"></script>
     </body>
 </html>

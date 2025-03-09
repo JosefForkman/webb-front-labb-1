@@ -25,27 +25,22 @@
     <body>
         <a href="#main" class="sr-only">Hoppa över menyn</a>
         <header class="bg-gray-300">
-            <label for="menu-toggle" aria-controls="menu">
-                <i class="fa-solid fa-bars fa-lg text-gray-800"></i>
-            </label>
-            <input type="checkbox" id="menu-toggle" />
-            <nav>
+            <button class="menu-btn" aria-controls="menu">
+                <span class="sr-only">Meny</span>
+                <i class="fa-solid fa-bars fa-lg text-gray-900"></i>
+            </button>
+            <nav aria-expanded="false">
                 <ul>
                     <li>
-                        <a href="/" class="text-primary-soft-red">Hem</a>
+                        <a href="/" class="text-red-800">Hem</a>
                     </li>
                     <li>
-                        <a
-                            href="./"
-                            class="text-primary-soft-red"
-                            aria-current="page"
+                        <a href="./" class="text-red-800" aria-current="page"
                             >Blogg</a
                         >
                     </li>
                     <li>
-                        <a
-                            href="/webGuidelines.html"
-                            class="text-primary-soft-red"
+                        <a href="/webGuidelines.html" class="text-red-800"
                             >Webbriktlinjer</a
                         >
                     </li>
@@ -107,19 +102,19 @@
                         nulla molestie massa sem mattis placerat nulla.
                     </p>
                     <pre class=".text-gray-900" tabindex="4">
-&lt<span class="text-primary-soft-red">main</span>>
+&lt<span class="text-red-800">main</span>>
     &lt<span class="text-primary-missing-status">ContactForm </span>/>
-    &lt<span class="text-primary-soft-red">ul</span>>
-        <span class="text-primary-missing-status">{</span>#<span class="text-blue-400"><span class="text-blue-400">each</span></span> <span class="text-primary-soft-red">messages</span> as <span class="text-primary-soft-red">message</span><span class="text-primary-missing-status">}</span>
-            &lt<span class="text-primary-soft-red">li</span>>
-                &lt<span class="text-primary-soft-red">h2</span>><span class="text-primary-missing-status">{</span><span class="text-primary-soft-red">message</span>.<span class="text-primary-soft-red">message</span><span class="text-primary-missing-status">}</span>&lt/<span class="text-primary-soft-red">h2</span>>
-                &lt<span class="text-primary-soft-red">form </span><span class="text-blue-400">on</span>:<span class="text-primary-missing-status">submit</span> | <span class="text-blue-200">preventDefault</span>=<span class="text-primary-missing-status">{</span><span class="text-blue-200">handleSubmit</span><span class="text-primary-missing-status">}</span>>
-                    &lt<span class="text-primary-soft-red">button</span>>Ta bort&lt/<span class="text-primary-soft-red">button</span>>
-                &lt/<span class="text-primary-soft-red">form</span>>
-            &lt/<span class="text-primary-soft-red">li</span>>
+    &lt<span class="text-red-800">ul</span>>
+        <span class="text-primary-missing-status">{</span>#<span class="text-blue-400"><span class="text-blue-400">each</span></span> <span class="text-red-800">messages</span> as <span class="text-red-800">message</span><span class="text-primary-missing-status">}</span>
+            &lt<span class="text-red-800">li</span>>
+                &lt<span class="text-red-800">h2</span>><span class="text-primary-missing-status">{</span><span class="text-red-800">message</span>.<span class="text-red-800">message</span><span class="text-primary-missing-status">}</span>&lt/<span class="text-red-800">h2</span>>
+                &lt<span class="text-red-800">form </span><span class="text-blue-400">on</span>:<span class="text-primary-missing-status">submit</span> | <span class="text-blue-200">preventDefault</span>=<span class="text-primary-missing-status">{</span><span class="text-blue-200">handleSubmit</span><span class="text-primary-missing-status">}</span>>
+                    &lt<span class="text-red-800">button</span>>Ta bort&lt/<span class="text-red-800">button</span>>
+                &lt/<span class="text-red-800">form</span>>
+            &lt/<span class="text-red-800">li</span>>
         <span class="text-primary-missing-status">{</span>/<span class="text-blue-400">each</span><span class="text-primary-missing-status">}</span>
-    &lt<span class="text-primary-soft-red">/ul</span>>
-&lt/<span class="text-primary-soft-red">main</span>>
+    &lt<span class="text-red-800">/ul</span>>
+&lt/<span class="text-red-800">main</span>>
 </pre>
                     <p>
                         Mauris et massa pulvinar pretium volutpat. Sodales
@@ -165,5 +160,6 @@
                 </ul>
             </div>
         </main>
+        <script src="JS/menu.js"></script>
     </body>
 </html>

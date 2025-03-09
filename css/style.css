@@ -73,7 +73,7 @@ header {
             border: none;
         }
 
-        input[type="checkbox"] {
+        /* input[type="checkbox"] {
             display: none;
 
             &:checked ~ nav ul {
@@ -84,57 +84,44 @@ header {
                 display: none;
                 animation: 0.3s menuClose ease-in-out forwards;
             }
-        }
+        } */
 
         nav {
             position: absolute;
             top: 6rem;
             right: 0;
             overflow-x: hidden;
+            /* width: 0px;
+            transition: width 0.3s ease-in-out;
+            
+            &[aria-expanded="true"] {
+                width: fit-content;
+                transition: all 0.3s ease-in-out;
+            } */
 
             ul {
+                display: flex;
                 gap: 1rem;
                 align-items: flex-end;
                 flex-direction: column;
                 background-color: var(--gray-300);
                 padding: 1em;
                 border-radius: 0.5em 0 0 0.5em;
+
+                translate: 100%;
+                transition: all 0.3s ease-in-out;
+                
+                &.active {
+                    translate: 0%;
+                }
             }
-        }
-    }
-
-    @keyframes menuOpen {
-        0% {
-            display: none;
-            transform: translateX(100%);
-        }
-        1% {
-            display: flex;
-        }
-        100% {
-            display: flex;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes menuClose {
-        0% {
-            display: flex;
-            transform: translateX(0);
-        }
-        99% {
-            display: flex;
-        }
-        100% {
-            display: none;
-            transform: translateX(100%);
         }
     }
 }
 
 @media screen and (prefers-reduced-motion) {
     header {
-        nav {
+        nav ul {
             transition: none;
         }
     }
