@@ -22,7 +22,7 @@ const createLinks = (webURL, GitHubURL) => {
                     href="${GitHubURL}"
                     class="text-gray-400">
                     <i
-                        class="fa-solid fa-globe fa-xl text-primary-soft-red"></i>
+                        class="fa-solid fa-globe fa-xl text-red-800"></i>
                     Hemsida</a
                 >
             </div>
@@ -68,6 +68,7 @@ const createDialog = async (
                 <button
                     popovertargetaction="hide"
                     popovertarget="${title}">
+                    <span class="sr-only">Stäng modal</span>
                     <i
                         class="fa-solid fa-times fa-lg text-blue-400 text-gray-400-hover"></i>
                 </button>
