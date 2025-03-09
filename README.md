@@ -4,7 +4,7 @@
 -   [x] [Ange sidans språk i koden](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/ange-sidans-sprak-i-koden)
 -   [x] [Ange språkförändringar i koden](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/ange-sprakforandringar-i-koden)
 -   [x] [Använd inte enbart färg för att förmedla information](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/anvand-inte-enbart-farg-for-att-formedla-information)
--   [ ] [Använd tillräcklig kontrast mellan text och bakgrund](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/anvand-tillracklig-kontrast-mellan-text-och-bakgrund)
+-   [x] [Använd tillräcklig kontrast mellan text och bakgrund](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/anvand-tillracklig-kontrast-mellan-text-och-bakgrund)
 -   [ ] [Använd tillräckliga kontraster i komponenter och grafik](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/anvand-tillrackliga-kontraster-i-komponenter-och-grafik)
 -   [ ] [ Beskriv med text allt innehåll som inte är text ](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/beskriv-med-text-allt-innehall-som-inte-ar-text)
 -   [ ] [Erbjud alternativ till komplexa fingerrörelser](https://www.digg.se/webbriktlinjer/alla-webbriktlinjer/erbjud-alternativ-till-komplexa-finger--eller-pekarrorelser)

@@ -24,8 +24,12 @@ p {
     }
     a {
         color: var(--gray-400);
-        font-weight: 500;
     }
+}
+
+a {
+    color: inherit;
+    font-weight: 500;
 }
 
 img {
@@ -90,6 +94,7 @@ form {
 
         input,
         textarea {
+            font-family: "Roboto Mono", serif;
             font-size: 0.875rem;
             background-color: var(--gray-200);
             padding: 0.5em 1em;
