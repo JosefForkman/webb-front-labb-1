@@ -100,11 +100,23 @@ form {
                 outline: 0px;
                 border-color: var(--blue-400);
             }
+
+            &:user-invalid {
+                border-color: var(--red-800);
+
+                & ~ [role="alert"] {
+                    display: block;
+                }
+            }
         }
 
         textarea {
             aspect-ratio: 3/1;
             resize: vertical;
+        }
+
+        [role="alert"] {
+            display: none;
         }
     }
     button {

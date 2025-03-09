@@ -477,7 +477,14 @@
                         <div class="form-group">
                             <label for="name">Namn</label>
                             <input type="text" id="name" name="name" required />
-                            <p>Det är ett error</p>
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="name"
+                                aria-live="polite">
+                                Namn input fält är obligatoriskt. Fyll i detta
+                                fält.
+                            </p>
                         </div>
                         <div class="form-group">
                             <label for="email">E-post</label>
@@ -486,6 +493,14 @@
                                 id="email"
                                 name="email"
                                 required />
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="email"
+                                aria-live="polite">
+                                E-post input fält är obligatoriskt och måste
+                                vara en e-post. Fyll i detta fält.
+                            </p>
                         </div>
                         <div class="form-group">
                             <label for="message">Meddelande</label>
@@ -493,6 +508,14 @@
                                 id="message"
                                 name="message"
                                 required></textarea>
+                            <p
+                                class="text-red-300"
+                                role="alert"
+                                aria-describedby="message"
+                                aria-live="polite">
+                                Medelande input fält är obligatoriskt. Fyll i
+                                detta fält.
+                            </p>
                         </div>
 
                         <button

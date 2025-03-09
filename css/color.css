@@ -2,6 +2,7 @@
 :root.light-theme {
     --blue-400: hsl(238, 40%, 52%);
     --blue-200: hsl(239, 57%, 85%);
+    --red-300: hsl(358deg 47.13% 53.66%);
     --red-800: hsl(358, 79%, 66%);
     --red-200: hsl(357, 100%, 86%);
     --Primary-Missing-Status: hsl(35, 79%, 66%);
@@ -20,6 +21,7 @@
     --blue-400: hsl(212, 83%, 95%);
     --blue-200: hsl(239, 57%, 85%);
     --red-800: hsl(358, 79%, 66%);
+    --red-300: hsl(358deg 100% 74.92%);
     --red-200: hsl(357, 100%, 86%);
     --Primary-Missing-Status: hsl(35, 79%, 66%);
 
@@ -36,6 +38,7 @@
         --blue-400: hsl(212, 83%, 95%);
         --blue-200: hsl(239, 57%, 85%);
         --red-800: hsl(358, 79%, 66%);
+        --red-300: hsl(358deg 100% 74.92%);
         --red-200: hsl(357, 100%, 86%);
         --Primary-Missing-Status: hsl(35, 79%, 66%);
 
@@ -70,6 +73,12 @@
 }
 .text-red-800 {
     color: var(--red-800);
+}
+.text-red-300 {
+    color: var(--red-300);
+}
+.text-red-200 {
+    color: var(--red-200);
 }
 .text-primary-missing-status {
     color: var(--Primary-Missing-Status);
