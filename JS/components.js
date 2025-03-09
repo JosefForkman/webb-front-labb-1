@@ -4,27 +4,31 @@ const createLinks = (webURL, GitHubURL) => {
 
     links.innerHTML = `
         <div class="link">
-            <a
-                target="_blank"
-                href="${webURL}"
-                class="text-gray-400">
-                <i
-                    class="fa-brands fa-github fa-xl text-blue-400"></i>
-                Github</a
-            >
+            <p>
+                <a
+                    target="_blank"
+                    href="${webURL}"
+                    class="text-gray-400">
+                    <i
+                        class="fa-brands fa-github fa-xl text-blue-400"></i>
+                    Github</a
+                >
+            </p>
         </div>
     `;
     if (GitHubURL) {
         links.innerHTML += `
             <div class="link">
-                <a
-                    target="_blank"
-                    href="${GitHubURL}"
-                    class="text-gray-400">
-                    <i
-                        class="fa-solid fa-globe fa-xl text-red-800"></i>
-                    Hemsida</a
-                >
+                <p>
+                    <a
+                        target="_blank"
+                        href="${GitHubURL}"
+                        class="text-gray-400">
+                        <i
+                            class="fa-solid fa-globe fa-xl text-red-800"></i>
+                        Hemsida</a
+                    >
+                </p>
             </div>
         `;
     }
